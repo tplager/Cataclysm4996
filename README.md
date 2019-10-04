@@ -1,2 +1,3 @@
 # Cataclysm4996
-A repository for Project 2 in Game Design and Development 2
+The game is based on the Rush Hour puzzle game. 
+The plan is to have the player unlock the puzzle to unlock the Northern Empire's horde of demons. 
