@@ -138,11 +138,21 @@ public class PathCheck : MonoBehaviour
 
     public void ChangeToBloodMaterial()
     {
-        gameObject.GetComponentInChildren<MeshRenderer>().material = bloodMaterial; 
+        MeshRenderer[] blockRenderers = gameObject.GetComponentsInChildren<MeshRenderer>();
+
+        foreach (MeshRenderer m in blockRenderers)
+        {
+            m.material = bloodMaterial;
+        }
     }
 
     public void ChangeToEmptyPathMaterial()
     {
-        gameObject.GetComponentInChildren<MeshRenderer>().material = pathMaterial;
+        MeshRenderer[] blockRenderers = gameObject.GetComponentsInChildren<MeshRenderer>();
+
+        foreach (MeshRenderer m in blockRenderers)
+        {
+            m.material = pathMaterial;
+        }
     }
 }

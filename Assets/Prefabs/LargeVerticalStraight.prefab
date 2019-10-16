@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 347eef7a88235264d8b59615b9e10ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  validPaths: 00000000
+  validPaths: 01000100
   bloodMaterial: {fileID: 2100000, guid: 05d280366a989f745ae97dee53f4711a, type: 2}
   pathMaterial: {fileID: 2100000, guid: 542ed6ef5ebb1b34292ecad969a5f1d2, type: 2}
   validPath: 0

@@ -437,6 +437,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1578809999}
+    - target: {fileID: 188817749710130900, guid: efff8f57d20ee1d408fbda6bc6f0b6ac,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 188817749710130902, guid: efff8f57d20ee1d408fbda6bc6f0b6ac,
         type: 3}
       propertyPath: validPaths.Array.data[0]
@@ -445,6 +450,11 @@ PrefabInstance:
     - target: {fileID: 188817749710130902, guid: efff8f57d20ee1d408fbda6bc6f0b6ac,
         type: 3}
       propertyPath: validPaths.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 188817749710130902, guid: efff8f57d20ee1d408fbda6bc6f0b6ac,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 188817749710130901, guid: efff8f57d20ee1d408fbda6bc6f0b6ac,
