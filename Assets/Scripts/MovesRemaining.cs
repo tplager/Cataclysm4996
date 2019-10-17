@@ -5,9 +5,15 @@ using UnityEngine.UI;
 
 public class MovesRemaining : MonoBehaviour
 {
+    
+    public int startingMoves;
     public int movesRemaining;
     public Text movesText;
-
+    
+    void Start()
+    {
+         movesRemaining = startingMoves;
+    }
     void Update()
     {
         movesText.text = "Moves Remaining: " + movesRemaining;
