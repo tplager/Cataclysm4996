@@ -40,10 +40,10 @@ public class PathCheck : MonoBehaviour
             validPath = false;
         }
 
-        //if (validPaths[0])
-        //{
-        //    CheckPathsInFront();
-        //}
+        if (validPaths[0])
+        {
+            CheckPathsInFront();
+        }
         if (validPaths[1])
         {
             CheckPathsRight();
