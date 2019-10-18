@@ -15,7 +15,9 @@ public class PathCheck : MonoBehaviour
     [SerializeField]
     private Material pathMaterial;
     [SerializeField]
-    private bool validPath; 
+    private bool validPath;
+    [SerializeField]
+    private bool centerPath; 
     #endregion
 
     public bool[] ValidPaths { get { return validPaths; } }
@@ -35,6 +37,11 @@ public class PathCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!centerPath)
+        {
+            validPath = false;
+        }
+
         if (layerMaskName != "CenterLayer")
         {
             validPath = false;

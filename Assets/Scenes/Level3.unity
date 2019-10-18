@@ -227,6 +227,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1147154542}
+    - target: {fileID: 5826233865458451707, guid: f6550cd1ff3366c488a9e63c6995d841,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6550cd1ff3366c488a9e63c6995d841, type: 3}
 --- !u!1001 &116265805
@@ -336,6 +341,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1147154542}
+    - target: {fileID: 295588178516916533, guid: 7114b668fb1e03540b7e949b8ca7ec87,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7114b668fb1e03540b7e949b8ca7ec87, type: 3}
 --- !u!1 &178062008
@@ -758,6 +768,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1147154542}
+    - target: {fileID: 159234717795068986, guid: 47e766ac1a50bfb4aaeffee044e168fb,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47e766ac1a50bfb4aaeffee044e168fb, type: 3}
 --- !u!1001 &641903459
@@ -867,6 +882,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1147154542}
+    - target: {fileID: 944222727632379394, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548567f9a13db0041b4026a061f9bffd, type: 3}
 --- !u!1001 &876792492
@@ -976,6 +996,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1147154542}
+    - target: {fileID: 453337300826214988, guid: 0360b946ad584994e85436922fec2556,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0360b946ad584994e85436922fec2556, type: 3}
 --- !u!1 &929070197
@@ -1178,6 +1203,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1147154542}
+    - target: {fileID: 2364195880799693825, guid: 92e1a40db8fb17342ba533333d78b087,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92e1a40db8fb17342ba533333d78b087, type: 3}
 --- !u!1001 &1147154541
@@ -1483,6 +1513,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1147154542}
+    - target: {fileID: 4219942068855570076, guid: 858f78c44f539164e80ea88e0d33a320,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5943794690468781886, guid: 858f78c44f539164e80ea88e0d33a320, type: 3}
     - {fileID: 4219942070117687829, guid: 858f78c44f539164e80ea88e0d33a320, type: 3}
@@ -1594,6 +1629,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1147154542}
+    - target: {fileID: 5826233865458451707, guid: f6550cd1ff3366c488a9e63c6995d841,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6550cd1ff3366c488a9e63c6995d841, type: 3}
 --- !u!1001 &1839413255
@@ -1703,6 +1743,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1147154542}
+    - target: {fileID: 2360066122913926518, guid: e2e7c0e01e8ce8a43b36684c79afa46c,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e7c0e01e8ce8a43b36684c79afa46c, type: 3}
 --- !u!1001 &1901021200
@@ -1812,6 +1857,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1147154542}
+    - target: {fileID: 944222727632379394, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548567f9a13db0041b4026a061f9bffd, type: 3}
 --- !u!1 &1945050189
@@ -1989,6 +2039,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717778459581671211, guid: e80b880aee37e0044b699395b110a035,
+        type: 3}
+      propertyPath: centerPath
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e80b880aee37e0044b699395b110a035, type: 3}

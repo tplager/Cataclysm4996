@@ -53,7 +53,7 @@ public class BlockMovement : MonoBehaviour
             if (dotProduct < 0)
             {
                 Vector3 rotation = gameObject.transform.eulerAngles;
-                rotation.z += speed;
+                rotation.z += speed * Time.deltaTime;
                 gameObject.transform.eulerAngles = rotation;
 
                 if (gameObject.transform.eulerAngles.z > 360)
@@ -76,18 +76,6 @@ public class BlockMovement : MonoBehaviour
                     gameObject.transform.eulerAngles = fixedRotation;
                 }
             }
-            //if (mousePreviousPosition.x < mouseCurrentPosition.x || mousePreviousPosition.y < mouseCurrentPosition.y)
-            //{
-            //    Vector3 rotation = gameObject.transform.eulerAngles;
-            //    rotation.z -= speed;
-            //    gameObject.transform.eulerAngles = rotation;
-            //}
-            //else if (mousePreviousPosition.x > mouseCurrentPosition.x || mousePreviousPosition.y > mouseCurrentPosition.y)
-            //{
-            //    Vector3 rotation = gameObject.transform.eulerAngles;
-            //    rotation.z += speed;
-            //    gameObject.transform.eulerAngles = rotation;
-            //}
             mousePreviousPosition = mouseCurrentPosition; 
         }
     }
