@@ -17,11 +17,19 @@ public class PathCheck : MonoBehaviour
     [SerializeField]
     private bool validPath;
     [SerializeField]
-    private bool centerPath; 
+    private bool centerPath;
+    [SerializeField]
+    private int raycastDistance; 
     #endregion
 
     public bool[] ValidPaths { get { return validPaths; } }
     public bool ValidPath { get { return validPath; } set { validPath = value; } }
+    public bool IsCenter { get { return centerPath; } }
+    public int RaycastDistance
+    {
+        get { return raycastDistance; }
+        set { raycastDistance = value; }
+    }
         
     // Start is called before the first frame update
     void Start()
@@ -37,10 +45,6 @@ public class PathCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!centerPath)
-        {
-            validPath = false;
-        }
 
         if (layerMaskName != "CenterLayer")
         {
@@ -77,9 +81,9 @@ public class PathCheck : MonoBehaviour
     private void CheckPathsInFront()
     {
         RaycastHit hit; 
-        bool isSomethingInFront = Physics.Raycast(gameObject.transform.position, gameObject.transform.up, out hit, 50, LayerMask.GetMask(layerUpMaskName));
-        if (isSomethingInFront) { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (gameObject.transform.up), Color.red); }
-        else { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (gameObject.transform.up), Color.black); }
+        bool isSomethingInFront = Physics.Raycast(gameObject.transform.position, gameObject.transform.up, out hit, raycastDistance, LayerMask.GetMask(layerUpMaskName));
+        //if (isSomethingInFront) { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (gameObject.transform.up), Color.red); }
+        //else { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (gameObject.transform.up), Color.black); }
 
         if (isSomethingInFront)
         {
@@ -93,9 +97,9 @@ public class PathCheck : MonoBehaviour
     private void CheckPathsBehind()
     {
         RaycastHit hit;
-        bool isSomethingBehind = Physics.Raycast(gameObject.transform.position, gameObject.transform.up, out hit, 50, LayerMask.GetMask(layerDownMaskName));
-        if (isSomethingBehind) { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (gameObject.transform.up), Color.red); }
-        else { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (gameObject.transform.up), Color.black); }
+        bool isSomethingBehind = Physics.Raycast(gameObject.transform.position, gameObject.transform.up, out hit, raycastDistance, LayerMask.GetMask(layerDownMaskName));
+        //if (isSomethingBehind) { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (gameObject.transform.up), Color.red); }
+        //else { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (gameObject.transform.up), Color.black); }
 
         if (isSomethingBehind)
         {
@@ -111,9 +115,9 @@ public class PathCheck : MonoBehaviour
         RaycastHit hit;
         Quaternion rotation = Quaternion.Euler(gameObject.transform.rotation.x, gameObject.transform.rotation.y, gameObject.transform.rotation.z + 45);
 
-        bool isSomethingLeft = Physics.Raycast(gameObject.transform.position, rotation * gameObject.transform.up, out hit, 50, LayerMask.GetMask(layerMaskName));
-        if (isSomethingLeft) { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up), Color.red); }
-        else { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up), Color.black); }
+        bool isSomethingLeft = Physics.Raycast(gameObject.transform.position, rotation * gameObject.transform.up, out hit, raycastDistance, LayerMask.GetMask(layerMaskName));
+        //if (isSomethingLeft) { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up), Color.red); }
+        //else { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up), Color.black); }
 
         if (isSomethingLeft)
         {
@@ -130,9 +134,9 @@ public class PathCheck : MonoBehaviour
 
         Quaternion rotation = Quaternion.Euler(gameObject.transform.rotation.x, gameObject.transform.rotation.y, gameObject.transform.rotation.z - 45);
 
-        bool isSomethingRight = Physics.Raycast(gameObject.transform.position, rotation * gameObject.transform.up, out hit, 50, LayerMask.GetMask(layerMaskName));
-        if (isSomethingRight) { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up), Color.red); }
-        else { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up), Color.black); }
+        bool isSomethingRight = Physics.Raycast(gameObject.transform.position, rotation * gameObject.transform.up, out hit, raycastDistance, LayerMask.GetMask(layerMaskName));
+        //if (isSomethingRight) { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up), Color.red); }
+        //else { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up), Color.black); }
 
         if (isSomethingRight)
         {

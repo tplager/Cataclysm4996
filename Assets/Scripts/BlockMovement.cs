@@ -53,7 +53,7 @@ public class BlockMovement : MonoBehaviour
             if (dotProduct < 0)
             {
                 Vector3 rotation = gameObject.transform.eulerAngles;
-                rotation.z += speed * Time.deltaTime;
+                rotation.z += speed;// * Time.deltaTime;
                 gameObject.transform.eulerAngles = rotation;
 
                 if (gameObject.transform.eulerAngles.z > 360)
