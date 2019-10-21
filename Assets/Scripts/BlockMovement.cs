@@ -13,7 +13,8 @@ public class BlockMovement : MonoBehaviour
     private int size;
     [SerializeField]
     private GameObject[] snapLocations;
-    private Vector3 mousePreviousPosition; 
+    private Vector3 mousePreviousPosition;
+    public GameObject movesObject;
     #endregion
 
     // Start is called before the first frame update
@@ -97,6 +98,8 @@ public class BlockMovement : MonoBehaviour
     void OnMouseUp()
     {
         clicked = false;
+
+        movesObject.GetComponent<MovesRemaining>().RemoveMoves();
 
         List<float> rotationDiffs = new List<float>(snapLocations.Length); 
 
