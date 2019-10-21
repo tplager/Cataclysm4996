@@ -7,7 +7,7 @@ public class PathCheck : MonoBehaviour
     #region Fields
     [SerializeField]
     private bool[] validPaths = new bool[4]; //an array indicating where this path can go
-    private string layerMaskName;
+    public string layerMaskName;
     private string layerUpMaskName;
     private string layerDownMaskName; 
     [SerializeField]
@@ -40,15 +40,18 @@ public class PathCheck : MonoBehaviour
         }
         layerDownMaskName = LayerMask.LayerToName(gameObject.layer - 1);
         layerMaskName = LayerMask.LayerToName(gameObject.layer);
+
+        validPath = true;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (layerMaskName != "CenterLayer")
+        if (layerMaskName == "CenterLayer")
         {
-            validPath = false;
+            validPath = true;
+            return;
         }
 
         if (validPaths[0])
@@ -70,11 +73,11 @@ public class PathCheck : MonoBehaviour
 
         if (validPath)
         {
-            ChangeToBloodMaterial(); 
+            ChangeToBloodMaterial();
         }
         else
         {
-            ChangeToEmptyPathMaterial(); 
+            ChangeToEmptyPathMaterial();
         }
     }
 
@@ -92,6 +95,7 @@ public class PathCheck : MonoBehaviour
                 validPath = true;
             }
         }
+        //else validPath = false;
     }
 
     private void CheckPathsBehind()

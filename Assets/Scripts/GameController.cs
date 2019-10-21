@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
             pathCheckScripts.Add(g.GetComponent<PathCheck>()); 
         }
 
-        pathRaycastDistance = 50;
+        //pathRaycastDistance = 50;
     }
 
     // Update is called once per frame
@@ -30,8 +30,8 @@ public class GameController : MonoBehaviour
     {
         foreach (PathCheck p in pathCheckScripts)
         {
-            if (!p.IsCenter) p.ValidPath = false;
             p.RaycastDistance = pathRaycastDistance;
+            p.ValidPath = false;
         }
     }
 }

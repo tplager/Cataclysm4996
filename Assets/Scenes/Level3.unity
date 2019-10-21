@@ -630,6 +630,7 @@ MonoBehaviour:
   - {fileID: 641903460}
   - {fileID: 2057024395}
   - {fileID: 523057707}
+  pathRaycastDistance: 100
 --- !u!1001 &523057706
 PrefabInstance:
   m_ObjectHideFlags: 0
