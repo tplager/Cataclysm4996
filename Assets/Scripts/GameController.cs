@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class GameController : MonoBehaviour
     private List<GameObject> blockObjects;
     private List<PathCheck> pathCheckScripts;
     [SerializeField]
-    private int pathRaycastDistance; 
+    private int pathRaycastDistance;
+    [SerializeField]
+    private GameObject exitPiece;
     #endregion
 
     // Start is called before the first frame update
@@ -19,7 +22,7 @@ public class GameController : MonoBehaviour
 
         foreach (GameObject g in blockObjects)
         {
-            pathCheckScripts.Add(g.GetComponent<PathCheck>()); 
+            pathCheckScripts.Add(g.GetComponent<PathCheck>());
         }
 
         //pathRaycastDistance = 50;
@@ -36,7 +39,14 @@ public class GameController : MonoBehaviour
 
         foreach (PathCheck p in pathCheckScripts)
         {
-            p.CheckPaths(); 
+            p.CheckPaths();
         }
+
+        if (exitPiece.GetComponent<PathCheck>().ValidPath)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
     }
+
 }

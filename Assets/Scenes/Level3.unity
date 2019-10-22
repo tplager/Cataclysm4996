@@ -628,9 +628,10 @@ MonoBehaviour:
   - {fileID: 1901021201}
   - {fileID: 1512803503}
   - {fileID: 641903460}
-  - {fileID: 2057024395}
+  - {fileID: 0}
   - {fileID: 523057707}
   pathRaycastDistance: 100
+  exitPiece: {fileID: 523057707}
 --- !u!1001 &523057706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2140,9 +2141,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e80b880aee37e0044b699395b110a035, type: 3}
---- !u!1 &2057024395 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5717778459581671206, guid: e80b880aee37e0044b699395b110a035,
-    type: 3}
-  m_PrefabInstance: {fileID: 2057024394}
-  m_PrefabAsset: {fileID: 0}

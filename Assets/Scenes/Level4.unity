@@ -1737,14 +1737,9 @@ MonoBehaviour:
   - {fileID: 1702721889}
   - {fileID: 313932357}
   - {fileID: 720221240}
-  - {fileID: 1499259678}
+  - {fileID: 0}
   pathRaycastDistance: 50
---- !u!1 &1499259678 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5717778459581671206, guid: e80b880aee37e0044b699395b110a035,
-    type: 3}
-  m_PrefabInstance: {fileID: 1709503922}
-  m_PrefabAsset: {fileID: 0}
+  exitPiece: {fileID: 720221240}
 --- !u!1001 &1615098916
 PrefabInstance:
   m_ObjectHideFlags: 0
