@@ -33,5 +33,10 @@ public class GameController : MonoBehaviour
             p.RaycastDistance = pathRaycastDistance;
             p.ValidPath = false;
         }
+
+        foreach (PathCheck p in pathCheckScripts)
+        {
+            p.CheckPaths(); 
+        }
     }
 }
