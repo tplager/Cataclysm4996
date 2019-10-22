@@ -17,9 +17,11 @@ public class MovesRemaining : MonoBehaviour
     void Update()
     {
         movesText.text = "Moves Remaining: " + movesRemaining;
-        if(Input.GetMouseButtonDown(0))
-        {
-            movesRemaining--;
-        }
+
+    }
+
+    public void RemoveMoves()
+    {
+        movesRemaining--;
     }
 }
