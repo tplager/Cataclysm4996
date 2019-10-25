@@ -176,7 +176,7 @@ PrefabInstance:
     - target: {fileID: 944222727632379395, guid: 548567f9a13db0041b4026a061f9bffd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 944222727632379395, guid: 548567f9a13db0041b4026a061f9bffd,
         type: 3}
@@ -233,6 +233,16 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 944222727632379394, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
+    - target: {fileID: 84621392058158806, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Path
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548567f9a13db0041b4026a061f9bffd, type: 3}
 --- !u!1 &313932357 stripped
@@ -291,7 +301,7 @@ PrefabInstance:
     - target: {fileID: 944222727632379395, guid: 548567f9a13db0041b4026a061f9bffd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 944222727632379395, guid: 548567f9a13db0041b4026a061f9bffd,
         type: 3}
@@ -348,6 +358,16 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 944222727632379394, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
+    - target: {fileID: 84621392058158806, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Path
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548567f9a13db0041b4026a061f9bffd, type: 3}
 --- !u!1 &365775049 stripped
@@ -418,7 +438,7 @@ PrefabInstance:
     - target: {fileID: 5826233865458451706, guid: f6550cd1ff3366c488a9e63c6995d841,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5826233865458451706, guid: f6550cd1ff3366c488a9e63c6995d841,
         type: 3}
@@ -475,6 +495,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 5826233865458451707, guid: f6550cd1ff3366c488a9e63c6995d841,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6550cd1ff3366c488a9e63c6995d841, type: 3}
 --- !u!1001 &609512194
@@ -527,7 +552,7 @@ PrefabInstance:
     - target: {fileID: 4219942068855570077, guid: 858f78c44f539164e80ea88e0d33a320,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4219942068855570077, guid: 858f78c44f539164e80ea88e0d33a320,
         type: 3}
@@ -584,6 +609,16 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 4219942068855570076, guid: 858f78c44f539164e80ea88e0d33a320,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
+    - target: {fileID: 6867005287870508976, guid: 858f78c44f539164e80ea88e0d33a320,
+        type: 3}
+      propertyPath: m_TagString
+      value: Path
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 858f78c44f539164e80ea88e0d33a320, type: 3}
 --- !u!1 &628072811 stripped
@@ -642,7 +677,7 @@ PrefabInstance:
     - target: {fileID: 159234717795068985, guid: 47e766ac1a50bfb4aaeffee044e168fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 159234717795068985, guid: 47e766ac1a50bfb4aaeffee044e168fb,
         type: 3}
@@ -699,6 +734,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 159234717795068986, guid: 47e766ac1a50bfb4aaeffee044e168fb,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47e766ac1a50bfb4aaeffee044e168fb, type: 3}
 --- !u!1001 &672545457
@@ -751,7 +791,7 @@ PrefabInstance:
     - target: {fileID: 944222727632379395, guid: 548567f9a13db0041b4026a061f9bffd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 944222727632379395, guid: 548567f9a13db0041b4026a061f9bffd,
         type: 3}
@@ -808,6 +848,16 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 944222727632379394, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
+    - target: {fileID: 84621392058158806, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Path
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548567f9a13db0041b4026a061f9bffd, type: 3}
 --- !u!1001 &692559113
@@ -860,7 +910,7 @@ PrefabInstance:
     - target: {fileID: 1071708950477844965, guid: d5726c9051913f24cb5895d2f8f32d5a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1071708950477844965, guid: d5726c9051913f24cb5895d2f8f32d5a,
         type: 3}
@@ -917,6 +967,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 1071708950477844964, guid: d5726c9051913f24cb5895d2f8f32d5a,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
     - target: {fileID: 1071708950477844966, guid: d5726c9051913f24cb5895d2f8f32d5a,
         type: 3}
       propertyPath: validPath
@@ -1058,7 +1113,7 @@ PrefabInstance:
     - target: {fileID: 3925980884377581294, guid: e8fd67b32722d4c4bae39224661e9f82,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3925980884377581294, guid: e8fd67b32722d4c4bae39224661e9f82,
         type: 3}
@@ -1115,6 +1170,16 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 3925980884377581293, guid: e8fd67b32722d4c4bae39224661e9f82,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
+    - target: {fileID: 2226483778838253836, guid: e8fd67b32722d4c4bae39224661e9f82,
+        type: 3}
+      propertyPath: m_TagString
+      value: Path
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8fd67b32722d4c4bae39224661e9f82, type: 3}
 --- !u!1 &963548863 stripped
@@ -1134,6 +1199,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SnapRotations
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588953372072335, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588953180503041, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588953175035668, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588953762680144, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588953816024663, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588954328353698, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588955222979451, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588954993096643, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
       objectReference: {fileID: 0}
     - target: {fileID: 283588954745986281, guid: cc1d4174b63bb3e49bc84e231fefe214,
         type: 3}
@@ -1380,7 +1485,7 @@ PrefabInstance:
     - target: {fileID: 295588178516916534, guid: 7114b668fb1e03540b7e949b8ca7ec87,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 295588178516916534, guid: 7114b668fb1e03540b7e949b8ca7ec87,
         type: 3}
@@ -1437,6 +1542,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 295588178516916533, guid: 7114b668fb1e03540b7e949b8ca7ec87,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7114b668fb1e03540b7e949b8ca7ec87, type: 3}
 --- !u!1001 &1203238717
@@ -1489,7 +1599,7 @@ PrefabInstance:
     - target: {fileID: 4219942068855570077, guid: 858f78c44f539164e80ea88e0d33a320,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4219942068855570077, guid: 858f78c44f539164e80ea88e0d33a320,
         type: 3}
@@ -1546,6 +1656,16 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 4219942068855570076, guid: 858f78c44f539164e80ea88e0d33a320,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
+    - target: {fileID: 6867005287870508976, guid: 858f78c44f539164e80ea88e0d33a320,
+        type: 3}
+      propertyPath: m_TagString
+      value: Path
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 858f78c44f539164e80ea88e0d33a320, type: 3}
 --- !u!1 &1334693551
@@ -1645,18 +1765,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockObjects:
+  - {fileID: 313932357}
+  - {fileID: 1702721889}
+  - {fileID: 697657522}
+  - {fileID: 205876944}
+  - {fileID: 1170637168}
   - {fileID: 803923077}
   - {fileID: 400397556}
   - {fileID: 628072811}
   - {fileID: 963548863}
   - {fileID: 1885068195}
-  - {fileID: 396861925}
-  - {fileID: 1170637168}
   - {fileID: 365775049}
-  - {fileID: 205876944}
-  - {fileID: 697657522}
-  - {fileID: 1702721889}
-  - {fileID: 313932357}
+  - {fileID: 396861925}
   - {fileID: 720221240}
   - {fileID: 0}
   pathRaycastDistance: 50
@@ -1780,7 +1900,7 @@ PrefabInstance:
     - target: {fileID: 453337300826214991, guid: 0360b946ad584994e85436922fec2556,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 453337300826214991, guid: 0360b946ad584994e85436922fec2556,
         type: 3}
@@ -1837,6 +1957,16 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 453337300826214988, guid: 0360b946ad584994e85436922fec2556,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
+    - target: {fileID: 5576045059764073486, guid: 0360b946ad584994e85436922fec2556,
+        type: 3}
+      propertyPath: m_TagString
+      value: Path
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0360b946ad584994e85436922fec2556, type: 3}
 --- !u!1 &1702721889 stripped
@@ -2171,7 +2301,7 @@ PrefabInstance:
     - target: {fileID: 295588178516916534, guid: 7114b668fb1e03540b7e949b8ca7ec87,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 295588178516916534, guid: 7114b668fb1e03540b7e949b8ca7ec87,
         type: 3}
@@ -2228,6 +2358,11 @@ PrefabInstance:
       propertyPath: snapLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1054871470}
+    - target: {fileID: 295588178516916533, guid: 7114b668fb1e03540b7e949b8ca7ec87,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 1869252304}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7114b668fb1e03540b7e949b8ca7ec87, type: 3}
 --- !u!1 &1869252304
