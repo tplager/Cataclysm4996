@@ -44,9 +44,13 @@ public class GameController : MonoBehaviour
 
         if (exitPiece.GetComponent<PathCheck>().ValidPath)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            GameObject.Find("WinCanvas").GetComponent<Canvas>().enabled = true;
         }
-
     }
 
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

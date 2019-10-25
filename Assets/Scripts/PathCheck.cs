@@ -10,10 +10,6 @@ public class PathCheck : MonoBehaviour
     public string layerMaskName;
     private string layerUpMaskName;
     private string layerDownMaskName; 
-    //[SerializeField]
-    //private Material bloodMaterial;
-    //[SerializeField]
-    //private Material pathMaterial;
     [SerializeField]
     private bool validPath;
     [SerializeField]
@@ -119,8 +115,8 @@ public class PathCheck : MonoBehaviour
         Quaternion rotation = Quaternion.Euler(gameObject.transform.rotation.x, gameObject.transform.rotation.y, gameObject.transform.rotation.z + 45);
 
         bool isSomethingLeft = Physics.Raycast(gameObject.transform.position, rotation * gameObject.transform.up, out hit, raycastDistance, LayerMask.GetMask(layerMaskName));
-        if (isSomethingLeft) { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up * raycastDistance), Color.red); }
-        else { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up * raycastDistance), Color.black); }
+        //if (isSomethingLeft) { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up * raycastDistance), Color.red); }
+        //else { Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + (rotation * gameObject.transform.up * raycastDistance), Color.black); }
 
         if (isSomethingLeft)
         {
