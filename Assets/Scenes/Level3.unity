@@ -187,6 +187,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 5826233865458451707, guid: f6550cd1ff3366c488a9e63c6995d841,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 178062008}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6550cd1ff3366c488a9e63c6995d841, type: 3}
 --- !u!1 &77801182 stripped
@@ -262,6 +267,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 295588178516916533, guid: 7114b668fb1e03540b7e949b8ca7ec87,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 178062008}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7114b668fb1e03540b7e949b8ca7ec87, type: 3}
 --- !u!1 &116265806 stripped
@@ -354,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec51d4ffde80f04d8bd52567811f6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingMoves: 5
+  startingMoves: 12
   movesRemaining: 0
   movesText: {fileID: 178062010}
 --- !u!222 &178062012
@@ -683,6 +693,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 159234717795068986, guid: 47e766ac1a50bfb4aaeffee044e168fb,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 178062008}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47e766ac1a50bfb4aaeffee044e168fb, type: 3}
 --- !u!1 &525926417 stripped
@@ -833,6 +848,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 315
       objectReference: {fileID: 0}
+    - target: {fileID: 453337300826214988, guid: 0360b946ad584994e85436922fec2556,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 178062008}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0360b946ad584994e85436922fec2556, type: 3}
 --- !u!1 &876792493 stripped
@@ -1001,6 +1021,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
+    - target: {fileID: 2364195880799693825, guid: 92e1a40db8fb17342ba533333d78b087,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 178062008}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92e1a40db8fb17342ba533333d78b087, type: 3}
 --- !u!1 &980440478 stripped
@@ -1220,6 +1245,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
       objectReference: {fileID: 0}
+    - target: {fileID: 5826233865458451707, guid: f6550cd1ff3366c488a9e63c6995d841,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 178062008}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6550cd1ff3366c488a9e63c6995d841, type: 3}
 --- !u!1 &1658308630 stripped
@@ -1364,6 +1394,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 225
       objectReference: {fileID: 0}
+    - target: {fileID: 2360066122913926518, guid: e2e7c0e01e8ce8a43b36684c79afa46c,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 178062008}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e7c0e01e8ce8a43b36684c79afa46c, type: 3}
 --- !u!1 &1839413256 stripped
@@ -1439,6 +1474,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 944222727632379394, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: movesObject
+      value: 
+      objectReference: {fileID: 178062008}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548567f9a13db0041b4026a061f9bffd, type: 3}
 --- !u!1 &1901021201 stripped
