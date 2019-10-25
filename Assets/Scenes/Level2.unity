@@ -2036,6 +2036,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 1454921689}
+    - target: {fileID: 2226483778838253836, guid: e8fd67b32722d4c4bae39224661e9f82,
+        type: 3}
+      propertyPath: m_TagString
+      value: Path
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8fd67b32722d4c4bae39224661e9f82, type: 3}
 --- !u!1 &2069847087 stripped
