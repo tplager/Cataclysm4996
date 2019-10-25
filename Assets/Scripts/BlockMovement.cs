@@ -21,7 +21,9 @@ public class BlockMovement : MonoBehaviour
     void Start()
     {
         clicked = false;
-        mousePreviousPosition = Input.mousePosition; 
+        mousePreviousPosition = Input.mousePosition;
+
+        snapLocations = GameObject.FindGameObjectsWithTag("SnapLocation");
     }
 
     // Update is called once per frame

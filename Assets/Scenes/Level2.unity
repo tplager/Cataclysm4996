@@ -1192,6 +1192,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: SnapRotations
       objectReference: {fileID: 0}
+    - target: {fileID: 283588953372072335, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588953180503041, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588953175035668, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588953762680144, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588953816024663, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588954328353698, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588955222979451, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 283588954993096643, guid: cc1d4174b63bb3e49bc84e231fefe214,
+        type: 3}
+      propertyPath: m_TagString
+      value: SnapLocation
+      objectReference: {fileID: 0}
     - target: {fileID: 283588954745986281, guid: cc1d4174b63bb3e49bc84e231fefe214,
         type: 3}
       propertyPath: m_LocalPosition.x

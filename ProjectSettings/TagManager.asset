@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Path
   - MovesRemain
+  - SnapLocation
   layers:
   - Default
   - TransparentFX
