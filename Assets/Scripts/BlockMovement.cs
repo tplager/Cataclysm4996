@@ -101,7 +101,10 @@ public class BlockMovement : MonoBehaviour
     {
         clicked = false;
 
-        movesObject.GetComponent<MovesRemaining>().RemoveMoves();
+        if (!GameObject.Find("PauseCanvas").GetComponent<PauseMenu>().paused)
+        {
+            movesObject.GetComponent<MovesRemaining>().RemoveMoves();
+        }
 
         List<float> rotationDiffs = new List<float>(snapLocations.Length); 
 

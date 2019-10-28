@@ -120,10 +120,10 @@ public class PathCheck : MonoBehaviour
 
         if (isSomethingLeft)
         {
-            Debug.Log(gameObject.name + ": " + hit.collider.gameObject.name);
+            //Debug.Log(gameObject.name + ": " + hit.collider.gameObject.name);
             if (hit.collider.gameObject.GetComponent<PathCheck>().ValidPaths[1] && hit.collider.gameObject.GetComponent<PathCheck>().ValidPath)
             {
-                Debug.Log("Hit valid");
+                //Debug.Log("Hit valid");
                 validPath = true;
             }
         }

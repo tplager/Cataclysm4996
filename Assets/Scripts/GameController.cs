@@ -15,6 +15,10 @@ public class GameController : MonoBehaviour
     private GameObject exitPiece;
     #endregion
 
+    #region Properties
+    public List<GameObject> BlockObjects { get { return blockObjects; } }
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
