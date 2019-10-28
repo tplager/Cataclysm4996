@@ -2015,7 +2015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec51d4ffde80f04d8bd52567811f6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingMoves: 7
+  startingMoves: 6
   movesRemaining: 0
   movesText: {fileID: 1454921691}
 --- !u!222 &1454921693
