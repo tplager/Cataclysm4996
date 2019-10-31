@@ -15,7 +15,9 @@ public class PathCheck : MonoBehaviour
     [SerializeField]
     private bool centerPath;
     [SerializeField]
-    private int raycastDistance; 
+    private int raycastDistance;
+
+    private bool alreadyChecked; 
     #endregion
 
     public bool[] ValidPaths { get { return validPaths; } }
@@ -25,6 +27,11 @@ public class PathCheck : MonoBehaviour
     {
         get { return raycastDistance; }
         set { raycastDistance = value; }
+    }
+    public bool AlreadyChecked
+    {
+        get { return alreadyChecked; }
+        set { alreadyChecked = value; }
     }
         
     // Start is called before the first frame update
@@ -76,7 +83,7 @@ public class PathCheck : MonoBehaviour
         //}
     }
 
-    private void CheckPathsInFront()
+    private bool CheckPathsInFront()
     {
         RaycastHit hit; 
         bool isSomethingInFront = Physics.Raycast(gameObject.transform.position, gameObject.transform.up, out hit, raycastDistance, LayerMask.GetMask(layerUpMaskName));
@@ -88,12 +95,15 @@ public class PathCheck : MonoBehaviour
             if (hit.collider.gameObject.GetComponent<PathCheck>().ValidPaths[2] && hit.collider.gameObject.GetComponent<PathCheck>().ValidPath)
             {
                 validPath = true;
+
+                return true; 
             }
         }
-        //else validPath = false;
+
+        return false; 
     }
 
-    private void CheckPathsBehind()
+    private bool CheckPathsBehind()
     {
         RaycastHit hit;
         bool isSomethingBehind = Physics.Raycast(gameObject.transform.position, gameObject.transform.up, out hit, raycastDistance, LayerMask.GetMask(layerDownMaskName));
@@ -105,11 +115,15 @@ public class PathCheck : MonoBehaviour
             if (hit.collider.gameObject.GetComponent<PathCheck>().ValidPaths[0] && hit.collider.gameObject.GetComponent<PathCheck>().ValidPath)
             {
                 validPath = true;
+
+                return true;
             }
         }
+
+        return false; 
     }
 
-    private void CheckPathsLeft()
+    private bool CheckPathsLeft()
     {
         RaycastHit hit;
         Quaternion rotation = Quaternion.Euler(gameObject.transform.rotation.x, gameObject.transform.rotation.y, gameObject.transform.rotation.z + 45);
@@ -125,11 +139,15 @@ public class PathCheck : MonoBehaviour
             {
                 //Debug.Log("Hit valid");
                 validPath = true;
+
+                return true;
             }
         }
+
+        return false;
     }
 
-    private void CheckPathsRight()
+    private bool CheckPathsRight()
     {
         RaycastHit hit;
 
@@ -144,8 +162,12 @@ public class PathCheck : MonoBehaviour
             if (hit.collider.gameObject.GetComponent<PathCheck>().ValidPaths[3] && hit.collider.gameObject.GetComponent<PathCheck>().ValidPath)
             {
                 validPath = true;
+
+                return true;
             }
         }
+
+        return false;
     }
 
     public void ChangeToBloodMaterial()
@@ -186,29 +208,29 @@ public class PathCheck : MonoBehaviour
         }
     }
 
-    public void CheckPaths()
+    public bool CheckPaths()
     {
         if (layerMaskName == "CenterLayer")
         {
             validPath = true;
-            return;
+            return false;
         }
 
         if (validPaths[0])
         {
-            CheckPathsInFront();
+            if (CheckPathsInFront()) return true; 
         }
         if (validPaths[1])
         {
-            CheckPathsRight();
+            if (CheckPathsRight()) return true;
         }
         if (validPaths[2])
         {
-            CheckPathsBehind();
+            if (CheckPathsBehind()) return true;
         }
         if (validPaths[3])
         {
-            CheckPathsLeft();
+            if (CheckPathsLeft()) return true;
         }
 
         if (validPath)
@@ -219,5 +241,7 @@ public class PathCheck : MonoBehaviour
         {
             ChangeToEmptyPathMaterial();
         }
+
+        return false; 
     }
 }

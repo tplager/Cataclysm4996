@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections.Generic; 
+using System.Collections.Generic;
+using System;
 
 public class BlockMovement : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class BlockMovement : MonoBehaviour
     [SerializeField]
     private int position; 
     private string currentPos;
+    [SerializeField]
     private bool movingClockwise; 
     #endregion
 
@@ -83,7 +85,7 @@ public class BlockMovement : MonoBehaviour
                     gameObject.transform.eulerAngles = fixedRotation;
                 }
 
-                movingClockwise = false; 
+                //movingClockwise = false; 
             }
             else
             {
@@ -98,7 +100,7 @@ public class BlockMovement : MonoBehaviour
                     gameObject.transform.eulerAngles = fixedRotation;
                 }
 
-                movingClockwise = true;
+                //movingClockwise = true;
             }
             mousePreviousPosition = mouseCurrentPosition; 
         }
@@ -144,19 +146,32 @@ public class BlockMovement : MonoBehaviour
             }
         }
 
+        string prevPos = currentPos; 
+
         position = smallestDiffInd;
 
         SetCurrentPos();
+
+        if (Int32.Parse(prevPos.Substring(1,1)) > position) movingClockwise = true;
+        else movingClockwise = false;
 
         while (Camera.main.GetComponent<GameController>().OccupiedPositions[currentPos])
         {
             if (movingClockwise) smallestDiffInd++;
             else smallestDiffInd--;
 
+            if (smallestDiffInd > 7) smallestDiffInd = 0;
+            else if (smallestDiffInd < 0) smallestDiffInd = 8; 
+
             position = smallestDiffInd;
 
-            SetCurrentPos(); 
+            SetCurrentPos();
+
+            Debug.Log(currentPos); 
         }
+
+        Camera.main.GetComponent<GameController>().OccupiedPositions[currentPos] = true;
+        Camera.main.GetComponent<GameController>().OccupiedPositions[prevPos] = false;
 
         if (Mathf.Abs(transform.eulerAngles.z - 360) < rotationDiffs[smallestDiffInd])
         {

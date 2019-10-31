@@ -67,9 +67,21 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //for (int i = 0; i < pathCheckScripts.Count; i++)
+        //{
+        //    if (!pathCheckScripts[i].AlreadyChecked)
+        //    {
+        //        if (pathCheckScripts[i].CheckPaths())
+        //        {
+        //            //i = 0;
+        //            pathCheckScripts[i].AlreadyChecked = true;
+        //        }
+        //    }
+        //}
+
         foreach (PathCheck p in pathCheckScripts)
         {
-            p.CheckPaths();
+            if (p.CheckPaths()) p.ChangeToBloodMaterial();
         }
 
         if (exitPiece.GetComponent<PathCheck>().ValidPath)
@@ -90,6 +102,7 @@ public class GameController : MonoBehaviour
         foreach (PathCheck p in pathCheckScripts)
         {
             p.ValidPath = false;
+            p.AlreadyChecked = false;
         }
     }
 
