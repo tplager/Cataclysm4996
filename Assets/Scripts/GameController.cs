@@ -67,17 +67,17 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //for (int i = 0; i < pathCheckScripts.Count; i++)
-        //{
-        //    if (!pathCheckScripts[i].AlreadyChecked)
-        //    {
-        //        if (pathCheckScripts[i].CheckPaths())
-        //        {
-        //            //i = 0;
-        //            pathCheckScripts[i].AlreadyChecked = true;
-        //        }
-        //    }
-        //}
+        for (int i = 0; i < pathCheckScripts.Count; i++)
+        {
+            if (!pathCheckScripts[i].AlreadyChecked)
+            {
+                if (pathCheckScripts[i].CheckPaths())
+                {
+                    pathCheckScripts[i].AlreadyChecked = true;
+                    i = 0;
+                }
+            }
+        }
 
         foreach (PathCheck p in pathCheckScripts)
         {
