@@ -15,11 +15,14 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private GameObject exitPiece;
     [SerializeField]
-    private GameObject scoreManagerPrefab; 
+    private GameObject scoreManagerPrefab;
+
+    private Dictionary<string, bool> occupiedPositions; 
     #endregion
 
     #region Properties
     public List<GameObject> BlockObjects { get { return blockObjects; } }
+    public Dictionary<string, bool> OccupiedPositions { get { return occupiedPositions; } }
     #endregion
 
     // Start is called before the first frame update
@@ -39,17 +42,31 @@ public class GameController : MonoBehaviour
             Debug.Log(GameObject.Find("ScoreManager"));
             Instantiate(scoreManagerPrefab);
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
+        occupiedPositions = new Dictionary<string, bool>();
+        for (int i = 0; i < 8; i++)
+        {
+            occupiedPositions.Add("s" + i, false);
+            occupiedPositions.Add("l" + i, false);
+        }
+
+        for (int i = 0; i < blockObjects.Count - 1; i++)
+        {
+            string position = blockObjects[i].GetComponent<BlockMovement>().CurrentPos;
+
+            occupiedPositions[position] = true;
+        }
+
         foreach (PathCheck p in pathCheckScripts)
         {
             p.RaycastDistance = pathRaycastDistance;
             p.ValidPath = false;
         }
+    }
 
+    // Update is called once per frame
+    void Update()
+    {
         foreach (PathCheck p in pathCheckScripts)
         {
             p.CheckPaths();
@@ -65,6 +82,14 @@ public class GameController : MonoBehaviour
             GameObject.Find("MovesRemain").GetComponent<MovesRemaining>().CountingDown = false;
 
             GameObject.Find("PauseCanvas").GetComponent<PauseMenu>().ableToPause = false;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        foreach (PathCheck p in pathCheckScripts)
+        {
+            p.ValidPath = false;
         }
     }
 

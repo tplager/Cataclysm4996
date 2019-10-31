@@ -297,6 +297,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 944222727632379394, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: position
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 84621392058158806, guid: 548567f9a13db0041b4026a061f9bffd,
         type: 3}
       propertyPath: m_TagString
@@ -989,6 +994,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 453337300826214988, guid: 0360b946ad584994e85436922fec2556,
+        type: 3}
+      propertyPath: position
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5576045059764073486, guid: 0360b946ad584994e85436922fec2556,
         type: 3}
       propertyPath: m_TagString
@@ -1368,6 +1378,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 1071708950477844964, guid: d5726c9051913f24cb5895d2f8f32d5a,
+        type: 3}
+      propertyPath: position
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8990921811171394059, guid: d5726c9051913f24cb5895d2f8f32d5a,
         type: 3}
       propertyPath: m_SortingOrder
@@ -2062,6 +2077,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 5826233865458451707, guid: f6550cd1ff3366c488a9e63c6995d841,
+        type: 3}
+      propertyPath: position
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6550cd1ff3366c488a9e63c6995d841, type: 3}
 --- !u!1 &860784671 stripped
@@ -2615,6 +2635,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 295588178516916533, guid: 7114b668fb1e03540b7e949b8ca7ec87,
+        type: 3}
+      propertyPath: position
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7114b668fb1e03540b7e949b8ca7ec87, type: 3}
 --- !u!1 &1343522570 stripped
@@ -3025,6 +3050,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 944222727632379394, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: position
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 84621392058158806, guid: 548567f9a13db0041b4026a061f9bffd,
         type: 3}
       propertyPath: m_TagString
@@ -3120,6 +3150,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 944222727632379394, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: position
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 84621392058158806, guid: 548567f9a13db0041b4026a061f9bffd,
         type: 3}
       propertyPath: m_TagString
@@ -3283,6 +3318,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 4219942068855570076, guid: 858f78c44f539164e80ea88e0d33a320,
+        type: 3}
+      propertyPath: position
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6867005287870508976, guid: 858f78c44f539164e80ea88e0d33a320,
         type: 3}
       propertyPath: m_TagString
@@ -3368,6 +3408,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 159234717795068986, guid: 47e766ac1a50bfb4aaeffee044e168fb,
+        type: 3}
+      propertyPath: position
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47e766ac1a50bfb4aaeffee044e168fb, type: 3}
 --- !u!1 &1732165305 stripped
@@ -3448,6 +3493,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 295588178516916533, guid: 7114b668fb1e03540b7e949b8ca7ec87,
+        type: 3}
+      propertyPath: position
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7114b668fb1e03540b7e949b8ca7ec87, type: 3}
 --- !u!1 &1792915810 stripped
@@ -3670,6 +3720,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 3976769}
+    - target: {fileID: 4219942068855570076, guid: 858f78c44f539164e80ea88e0d33a320,
+        type: 3}
+      propertyPath: position
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6867005287870508976, guid: 858f78c44f539164e80ea88e0d33a320,
         type: 3}
       propertyPath: m_TagString

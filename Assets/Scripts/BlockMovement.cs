@@ -15,6 +15,14 @@ public class BlockMovement : MonoBehaviour
     private GameObject[] snapLocations;
     private Vector3 mousePreviousPosition;
     public GameObject movesObject;
+    [SerializeField]
+    private int position; 
+    private string currentPos;
+    private bool movingClockwise; 
+    #endregion
+
+    #region Properties
+    public string CurrentPos { get { return currentPos; } }
     #endregion
 
     // Start is called before the first frame update
@@ -24,6 +32,15 @@ public class BlockMovement : MonoBehaviour
         mousePreviousPosition = Input.mousePosition;
 
         snapLocations = GameObject.FindGameObjectsWithTag("SnapLocation");
+
+        if (size == 0)
+        {
+            currentPos = "s" + position;
+        }
+        else
+        {
+            currentPos = "l" + position;
+        }
     }
 
     // Update is called once per frame
@@ -65,6 +82,8 @@ public class BlockMovement : MonoBehaviour
                     fixedRotation.z = fixedRotation.z - 360;
                     gameObject.transform.eulerAngles = fixedRotation;
                 }
+
+                movingClockwise = false; 
             }
             else
             {
@@ -78,6 +97,8 @@ public class BlockMovement : MonoBehaviour
                     fixedRotation.z = 360 + fixedRotation.z;
                     gameObject.transform.eulerAngles = fixedRotation;
                 }
+
+                movingClockwise = true;
             }
             mousePreviousPosition = mouseCurrentPosition; 
         }
@@ -113,14 +134,28 @@ public class BlockMovement : MonoBehaviour
             rotationDiffs.Add(Mathf.Abs(transform.eulerAngles.z - snapLocations[i].transform.eulerAngles.z)); 
         }
 
-        int smallestDiffInd = 0; 
+        int smallestDiffInd = 0;
 
         for (int i = 1; i < snapLocations.Length; i++)
         {
             if (rotationDiffs[i] < rotationDiffs[smallestDiffInd])
             {
-                smallestDiffInd = i; 
+                smallestDiffInd = i;
             }
+        }
+
+        position = smallestDiffInd;
+
+        SetCurrentPos();
+
+        while (Camera.main.GetComponent<GameController>().OccupiedPositions[currentPos])
+        {
+            if (movingClockwise) smallestDiffInd++;
+            else smallestDiffInd--;
+
+            position = smallestDiffInd;
+
+            SetCurrentPos(); 
         }
 
         if (Mathf.Abs(transform.eulerAngles.z - 360) < rotationDiffs[smallestDiffInd])
@@ -134,6 +169,18 @@ public class BlockMovement : MonoBehaviour
             Vector3 rotation = gameObject.transform.eulerAngles;
             rotation.z = snapLocations[smallestDiffInd].transform.eulerAngles.z;
             gameObject.transform.eulerAngles = rotation;
+        }
+    }
+
+    private void SetCurrentPos()
+    {
+        if (size == 0)
+        {
+            currentPos = "s" + position;
+        }
+        else
+        {
+            currentPos = "l" + position;
         }
     }
 }
