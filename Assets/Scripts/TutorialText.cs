@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Controls the tutorial scene
+/// 
+/// author: Darius James daj7160@rit.edu
+/// </summary>
 public class TutorialText : MonoBehaviour
 {
+    #region Fields
     public Text tutorial;
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
