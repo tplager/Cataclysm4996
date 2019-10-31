@@ -2683,6 +2683,8 @@ MonoBehaviour:
   - {fileID: 754983366}
   pathRaycastDistance: 50
   exitPiece: {fileID: 754983366}
+  scoreManagerPrefab: {fileID: 2444271071280721970, guid: 0d6266657e1c689409132fd7cbcd8594,
+    type: 3}
 --- !u!81 &1343553329
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2898,6 +2900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1490570668}
+  scoreManager: {fileID: 0}
 --- !u!114 &1490570668
 MonoBehaviour:
   m_ObjectHideFlags: 0

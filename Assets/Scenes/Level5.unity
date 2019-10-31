@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 9498145}
+  scoreManager: {fileID: 0}
 --- !u!114 &9498145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1398,6 +1399,8 @@ MonoBehaviour:
   - {fileID: 513270932}
   pathRaycastDistance: 50
   exitPiece: {fileID: 513270932}
+  scoreManagerPrefab: {fileID: 2444271071280721970, guid: 0d6266657e1c689409132fd7cbcd8594,
+    type: 3}
 --- !u!81 &721455126
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2945,12 +2948,12 @@ PrefabInstance:
     - target: {fileID: 1489642370405737202, guid: e80b880aee37e0044b699395b110a035,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5142456285037347251, guid: e80b880aee37e0044b699395b110a035,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5717778459581671211, guid: e80b880aee37e0044b699395b110a035,
         type: 3}

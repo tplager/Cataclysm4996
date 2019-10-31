@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameController : MonoBehaviour
 {
@@ -33,8 +34,9 @@ public class GameController : MonoBehaviour
 
         //pathRaycastDistance = 50;
 
-        if (GameObject.Find("ScoreManager") == null)
+        if (GameObject.Find("ScoreManager") == null && GameObject.Find("ScoreManager(Clone)") == null)
         {
+            Debug.Log(GameObject.Find("ScoreManager"));
             Instantiate(scoreManagerPrefab);
         }
     }
@@ -63,13 +65,23 @@ public class GameController : MonoBehaviour
             GameObject.Find("MovesRemain").GetComponent<MovesRemaining>().CountingDown = false;
 
             GameObject.Find("PauseCanvas").GetComponent<PauseMenu>().ableToPause = false;
-
-            GameObject.Find("ScoreManager").GetComponent<ScoreManagement>().EndLevel(); 
         }
     }
 
     public void NextLevel()
     {
+        if (SceneManager.GetActiveScene().name.Substring(0, 5) == "Level")
+        {
+            try
+            {
+                GameObject.Find("ScoreManager").GetComponent<ScoreManagement>().EndLevel();
+            }
+            catch (Exception e)
+            {
+                GameObject.Find("ScoreManager(Clone)").GetComponent<ScoreManagement>().EndLevel();
+            }
+        }
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

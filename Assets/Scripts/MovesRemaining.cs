@@ -40,7 +40,7 @@ public class MovesRemaining : MonoBehaviour
     {
         if (countingDown) movesRemaining--;
 
-        if (movesRemaining < 0)
+        if (movesRemaining <= 0)
         {
             GameObject.Find("LoseCanvas").GetComponent<Canvas>().enabled = true;
 

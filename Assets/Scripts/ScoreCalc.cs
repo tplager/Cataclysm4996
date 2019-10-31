@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,7 +17,15 @@ public class ScoreCalc : MonoBehaviour
     {
         moveCounter = GameObject.Find("MovesRemain");
         moves = moveCounter.GetComponent<MovesRemaining>();
-        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManagement>(); 
+
+        try
+        {
+            scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManagement>();
+        }
+        catch (Exception e)
+        {
+            scoreManager = GameObject.Find("ScoreManager(Clone)").GetComponent<ScoreManagement>(); 
+        }
     }
 
     // Update is called once per frame

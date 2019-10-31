@@ -842,6 +842,8 @@ MonoBehaviour:
   - {fileID: 523057707}
   pathRaycastDistance: 100
   exitPiece: {fileID: 523057707}
+  scoreManagerPrefab: {fileID: 2444271071280721970, guid: 0d6266657e1c689409132fd7cbcd8594,
+    type: 3}
 --- !u!114 &341430870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,6 +1813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 929070200}
+  scoreManager: {fileID: 0}
 --- !u!114 &929070200
 MonoBehaviour:
   m_ObjectHideFlags: 0
