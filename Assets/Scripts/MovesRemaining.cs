@@ -5,14 +5,30 @@ using UnityEngine.UI;
 
 public class MovesRemaining : MonoBehaviour
 {
-    
-    public int startingMoves;
-    public int movesRemaining;
-    public Text movesText;
-    
+    #region Fields
+    [SerializeField]
+    private int startingMoves;
+    [SerializeField]
+    private int movesRemaining;
+    [SerializeField]
+    private Text movesText;
+    private bool countingDown;
+    #endregion
+
+    #region Properties
+    public bool CountingDown
+    {
+        get { return countingDown;  }
+        set { countingDown = value; }
+    }
+    public int MovesRemain { get { return movesRemaining; } }
+    public int StartingMoves { get { return startingMoves; } }
+    #endregion
+
     void Start()
     {
-         movesRemaining = startingMoves;
+        movesRemaining = startingMoves;
+        countingDown = true;
     }
     void Update()
     {
@@ -22,6 +38,17 @@ public class MovesRemaining : MonoBehaviour
 
     public void RemoveMoves()
     {
-        movesRemaining--;
+        if (countingDown) movesRemaining--;
+
+        if (movesRemaining < 0)
+        {
+            GameObject.Find("LoseCanvas").GetComponent<Canvas>().enabled = true;
+
+            Camera.main.GetComponent<GameController>().TurnOffMovement();
+
+            GameObject.Find("PauseCanvas").GetComponent<PauseMenu>().ableToPause = false;
+
+            GameObject.Find("MovesRemain").GetComponent<MovesRemaining>().CountingDown = false;
+        }
     }
 }

@@ -13,6 +13,8 @@ public class GameController : MonoBehaviour
     private int pathRaycastDistance;
     [SerializeField]
     private GameObject exitPiece;
+    [SerializeField]
+    private GameObject scoreManagerPrefab; 
     #endregion
 
     #region Properties
@@ -30,6 +32,11 @@ public class GameController : MonoBehaviour
         }
 
         //pathRaycastDistance = 50;
+
+        if (GameObject.Find("ScoreManager") == null)
+        {
+            Instantiate(scoreManagerPrefab);
+        }
     }
 
     // Update is called once per frame
@@ -50,11 +57,41 @@ public class GameController : MonoBehaviour
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             GameObject.Find("WinCanvas").GetComponent<Canvas>().enabled = true;
+
+            TurnOffMovement(); 
+
+            GameObject.Find("MovesRemain").GetComponent<MovesRemaining>().CountingDown = false;
+
+            GameObject.Find("PauseCanvas").GetComponent<PauseMenu>().ableToPause = false;
+
+            GameObject.Find("ScoreManager").GetComponent<ScoreManagement>().EndLevel(); 
         }
     }
 
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void RestartLevel()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+    }
+
+    public void TurnOffMovement()
+    {
+        for (int i = 0; i < blockObjects.Count - 1; i++)
+        {
+            blockObjects[i].GetComponent<BlockMovement>().enabled = false;
+        }
+    }
+
+    public void TurnOnMovement()
+    {
+        for (int i = 0; i < blockObjects.Count - 1; i++)
+        {
+            blockObjects[i].GetComponent<BlockMovement>().enabled = true;
+        }
     }
 }

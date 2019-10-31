@@ -9,17 +9,21 @@ public class ScoreCalc : MonoBehaviour
     public Text scoreText;
     GameObject moveCounter;
     MovesRemaining moves;
+    public ScoreManagement scoreManager; 
+
     // Start is called before the first frame update
     void Start()
     {
         moveCounter = GameObject.Find("MovesRemain");
         moves = moveCounter.GetComponent<MovesRemaining>();
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManagement>(); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        score = (moves.startingMoves + moves.movesRemaining) * 100;
+        score = (moves.StartingMoves + moves.MovesRemain) * 100;
+        scoreManager.LevelScore = score;
 
         if (score < 0)
         {

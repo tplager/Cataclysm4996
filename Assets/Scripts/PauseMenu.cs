@@ -6,7 +6,7 @@ public class PauseMenu : MonoBehaviour
 {
     public bool paused = false;
     public GameObject pauseMenu;
-    //List<GameObject> blocks;
+    public bool ableToPause = true; 
 
     void Start()
     {
@@ -17,17 +17,20 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (ableToPause)
         {
-            if (paused)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                //GameObject.Find("Resume").onClick.Invoke();
-                ResumeGame();
-            }
+                if (paused)
+                {
+                    //GameObject.Find("Resume").onClick.Invoke();
+                    ResumeGame();
+                }
 
-            if (!paused)
-            {
-                PauseGame();
+                if (!paused)
+                {
+                    PauseGame();
+                }
             }
         }
     }
@@ -36,24 +39,34 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Resuming");
         pauseMenu.SetActive(false);
-        List<GameObject> blocks = Camera.main.GetComponent<GameController>().BlockObjects;
-        for (int i = 0; i < blocks.Count - 1; i++)
-        {
-            blocks[i].GetComponent<BlockMovement>().enabled = true;
-        }
+        //List<GameObject> blocks = Camera.main.GetComponent<GameController>().BlockObjects;
+        //for (int i = 0; i < blocks.Count - 1; i++)
+        //{
+        //    blocks[i].GetComponent<BlockMovement>().enabled = true;
+        //}
+
+        Camera.main.GetComponent<GameController>().TurnOnMovement();
+
         paused = false;
+
+        GameObject.Find("MovesRemain").GetComponent<MovesRemaining>().CountingDown = true;
     }
 
-    void PauseGame()
+    public void PauseGame()
     {
         Debug.Log("Pausing");
         pauseMenu.SetActive(true);
-        List<GameObject> blocks = Camera.main.GetComponent<GameController>().BlockObjects;
-        for (int i = 0; i < blocks.Count - 1; i++)
-        {
-            blocks[i].GetComponent<BlockMovement>().enabled = false;
-        }
+        //List<GameObject> blocks = Camera.main.GetComponent<GameController>().BlockObjects;
+        //for (int i = 0; i < blocks.Count - 1; i++)
+        //{
+        //    blocks[i].GetComponent<BlockMovement>().enabled = false;
+        //}
+
+        Camera.main.GetComponent<GameController>().TurnOffMovement(); 
+
         paused = true;
+
+        GameObject.Find("MovesRemain").GetComponent<MovesRemaining>().CountingDown = false;
     }
 
     public void QuitGame()
