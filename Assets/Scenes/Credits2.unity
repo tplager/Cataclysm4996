@@ -757,7 +757,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 79113018b88723a42bc020201b28da9f, type: 3}
-    m_FontSize: 27
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -768,7 +768,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Art/Images: '
+  m_Text: "Art/Images: \n\nMain Menu/Credits background: http://www.themoderngladiator.com/2015/12/28/walking-through-the-gates-of-hell/\n\nLevel
+    Select Background: https://evil.fandom.com/wiki/Dungeons\n\nIn-Game background
+    - https://www.reddit.com/r/gamedev/comments/19y7g3/screenshot_saturday_109_recursive/\r\nreddit\n\nBlock
+    assets made by Joel White"
 --- !u!222 &1925116466
 CanvasRenderer:
   m_ObjectHideFlags: 0
