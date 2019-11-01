@@ -732,8 +732,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -383, y: -70.7}
-  m_SizeDelta: {x: 519.3, y: 412.5}
+  m_AnchoredPosition: {x: -368.4, y: -70.7}
+  m_SizeDelta: {x: 519.3, y: 464.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925116465
 MonoBehaviour:
@@ -757,7 +757,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 79113018b88723a42bc020201b28da9f, type: 3}
-    m_FontSize: 25
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -770,7 +770,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Art/Images: \n\nMain Menu/Credits background: http://www.themoderngladiator.com/2015/12/28/walking-through-the-gates-of-hell/\n\nLevel
     Select Background: https://evil.fandom.com/wiki/Dungeons\n\nIn-Game background
-    - https://www.reddit.com/r/gamedev/comments/19y7g3/screenshot_saturday_109_recursive/\r\nreddit\n\nBlock
+    - https://www.reddit.com/r/gamedev/comments/19y7g3/screenshot_saturday_109_recursive/\r\nreddit\n\nCenter
+    Pool Texture - https://www.deviantart.com/berserkitty/art/Seamless-Cartoon-styled-Water-Texture-743787929\n\nBlock
     assets made by Joel White"
 --- !u!222 &1925116466
 CanvasRenderer:
