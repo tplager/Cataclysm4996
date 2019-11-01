@@ -179,38 +179,38 @@ public class BlockMovement : MonoBehaviour
             }
         }
 
-        //update the current position and position fields
-        //to the actual current position of the block
-        string prevPos = currentPos; 
+        ////update the current position and position fields
+        ////to the actual current position of the block
+        //string prevPos = currentPos; 
 
-        position = smallestDiffInd;
+        //position = smallestDiffInd;
 
-        SetCurrentPos();
+        //SetCurrentPos();
         
-        //determine if the block was moving clockwise or not
-        if (Int32.Parse(prevPos.Substring(1,1)) > position) movingClockwise = true;
-        else movingClockwise = false;
+        ////determine if the block was moving clockwise or not
+        //if (Int32.Parse(prevPos.Substring(1,1)) > position) movingClockwise = true;
+        //else movingClockwise = false;
 
-        //loop through until an unoccupied spot is found
-        while (Camera.main.GetComponent<GameController>().OccupiedPositions[currentPos])
-        {
-            //if this spot is occuped change the smallest difference index
-            if (movingClockwise) smallestDiffInd++;
-            else smallestDiffInd--;
+        ////loop through until an unoccupied spot is found
+        //while (Camera.main.GetComponent<GameController>().OccupiedPositions[currentPos])
+        //{
+        //    //if this spot is occuped change the smallest difference index
+        //    if (movingClockwise) smallestDiffInd++;
+        //    else smallestDiffInd--;
 
-            //reset it if it overflows either way
-            if (smallestDiffInd > 7) smallestDiffInd = 0;
-            else if (smallestDiffInd < 0) smallestDiffInd = 8; 
+        //    //reset it if it overflows either way
+        //    if (smallestDiffInd > 7) smallestDiffInd = 0;
+        //    else if (smallestDiffInd < 0) smallestDiffInd = 8; 
 
-            //set position and current position
-            position = smallestDiffInd;
+        //    //set position and current position
+        //    position = smallestDiffInd;
 
-            SetCurrentPos();
-        }
+        //    SetCurrentPos();
+        //}
 
-        //Update the occuped positions dictionary with the new positions
-        Camera.main.GetComponent<GameController>().OccupiedPositions[currentPos] = true;
-        Camera.main.GetComponent<GameController>().OccupiedPositions[prevPos] = false;
+        ////Update the occuped positions dictionary with the new positions
+        //Camera.main.GetComponent<GameController>().OccupiedPositions[currentPos] = true;
+        //Camera.main.GetComponent<GameController>().OccupiedPositions[prevPos] = false;
 
         //Update the actual position of the block
         //so that it snaps to the nearest snap location
