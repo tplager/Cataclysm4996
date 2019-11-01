@@ -125,8 +125,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15, y: 8, z: 1}
-  m_Center: {x: 0, y: 18.69, z: 0}
+  m_Size: {x: 14.0695, y: 7.874054, z: 1}
+  m_Center: {x: -0.21870065, y: 19.182281, z: 0}
 --- !u!114 &3925980884377581293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,6 +152,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   movesObject: {fileID: 0}
+  position: 0
+  movingClockwise: 0
 --- !u!114 &3925980884377581295
 MonoBehaviour:
   m_ObjectHideFlags: 0
