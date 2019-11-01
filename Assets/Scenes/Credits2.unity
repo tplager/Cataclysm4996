@@ -191,8 +191,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Font: Sidhe \nhttps://www.fontspace.com/furdzville/sidhe\n\nAudio: \nButton
-    Click: http://soundbible.com/\nStone Grinding: https://retired.sounddogs.com/\nDungeon
-    Ambience: https://tabletopaudio.com/\nDemon Laugh: https://www.freesoundeffects.com"
+    Click: http://soundbible.com/\n\nStone Grinding: https://retired.sounddogs.com/\n\nDungeon
+    Ambience: https://tabletopaudio.com/\n\nDemon Laugh: https://www.freesoundeffects.com"
 --- !u!222 &236482787
 CanvasRenderer:
   m_ObjectHideFlags: 0
