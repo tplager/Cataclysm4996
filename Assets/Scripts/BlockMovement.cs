@@ -124,6 +124,15 @@ public class BlockMovement : MonoBehaviour
     void OnMouseDown()
     {
         clicked = true;
+
+        try
+        {
+            GameObject.Find("AudioManager").GetComponent<AudioManager>().PlayStoneGrinding();
+        }
+        catch (Exception e)
+        {
+            GameObject.Find("AudioManager(Clone)").GetComponent<AudioManager>().PlayStoneGrinding();
+        }
     }
 
     /// <summary>
@@ -131,6 +140,15 @@ public class BlockMovement : MonoBehaviour
     /// </summary>
     void OnMouseUp()
     {
+        try
+        {
+            GameObject.Find("AudioManager").GetComponent<AudioManager>().StopStoneGrinding();
+        }
+        catch (Exception e)
+        {
+            GameObject.Find("AudioManager(Clone)").GetComponent<AudioManager>().StopStoneGrinding();
+        }
+
         //reset clicked
         clicked = false;
 

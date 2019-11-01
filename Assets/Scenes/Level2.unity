@@ -916,7 +916,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.92}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.9999695, y: -8}
+  m_AnchoredPosition: {x: 2, y: -8}
   m_SizeDelta: {x: 0, y: 0.99998474}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &389399559
@@ -932,7 +932,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 389399560}
-  scoreManager: {fileID: 0}
+  moveCounter: {fileID: 0}
+  moves: {fileID: 0}
 --- !u!114 &389399560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,6 +1048,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 1454921689}
+    - target: {fileID: 5826233865458451707, guid: f6550cd1ff3366c488a9e63c6995d841,
+        type: 3}
+      propertyPath: position
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6550cd1ff3366c488a9e63c6995d841, type: 3}
 --- !u!1 &405172127 stripped
@@ -1538,6 +1544,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 1454921689}
+    - target: {fileID: 295588178516916533, guid: 7114b668fb1e03540b7e949b8ca7ec87,
+        type: 3}
+      propertyPath: position
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7114b668fb1e03540b7e949b8ca7ec87, type: 3}
 --- !u!1 &903731205 stripped
@@ -2056,6 +2067,8 @@ MonoBehaviour:
   pathRaycastDistance: 1000
   exitPiece: {fileID: 241104702}
   scoreManagerPrefab: {fileID: 2444271071280721970, guid: 0d6266657e1c689409132fd7cbcd8594,
+    type: 3}
+  audioManagerPrefab: {fileID: 8646049715343272447, guid: 007991dc3a57fb04db449fa0205b1631,
     type: 3}
 --- !u!81 &1400940738
 AudioListener:
@@ -2586,6 +2599,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 1454921689}
+    - target: {fileID: 4259799978393053473, guid: d71bb638dbd499a43ba22d65486f54e5,
+        type: 3}
+      propertyPath: position
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71bb638dbd499a43ba22d65486f54e5, type: 3}
 --- !u!1 &1585264124 stripped
@@ -3488,6 +3506,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 1454921689}
+    - target: {fileID: 3925980884377581293, guid: e8fd67b32722d4c4bae39224661e9f82,
+        type: 3}
+      propertyPath: position
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2226483778838253836, guid: e8fd67b32722d4c4bae39224661e9f82,
         type: 3}
       propertyPath: m_TagString

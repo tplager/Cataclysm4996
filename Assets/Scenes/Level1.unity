@@ -1007,6 +1007,8 @@ MonoBehaviour:
   exitPiece: {fileID: 2143395536}
   scoreManagerPrefab: {fileID: 2444271071280721970, guid: 0d6266657e1c689409132fd7cbcd8594,
     type: 3}
+  audioManagerPrefab: {fileID: 8646049715343272447, guid: 007991dc3a57fb04db449fa0205b1631,
+    type: 3}
 --- !u!114 &426648781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2067,7 +2069,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1078203323}
-  scoreManager: {fileID: 0}
+  moveCounter: {fileID: 0}
+  moves: {fileID: 0}
 --- !u!1 &1125309232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2813,6 +2816,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 289816773}
+    - target: {fileID: 2364195880799693825, guid: 92e1a40db8fb17342ba533333d78b087,
+        type: 3}
+      propertyPath: position
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92e1a40db8fb17342ba533333d78b087, type: 3}
 --- !u!1 &1654575330 stripped

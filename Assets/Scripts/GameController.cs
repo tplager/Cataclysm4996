@@ -23,6 +23,8 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private GameObject scoreManagerPrefab;                  //the score manager prefab so it can be created if there isn't one
     private Dictionary<string, bool> occupiedPositions;     //a dictionary of strings mapped to booleans represeting whether a spot is occupied or not
+    [SerializeField]
+    private GameObject audioManagerPrefab;                  //an audio manager prefab so it can be created if there isn't one
     #endregion
 
     #region Properties
@@ -44,8 +46,13 @@ public class GameController : MonoBehaviour
         //if there is no score manager in the scene create one
         if (GameObject.Find("ScoreManager") == null && GameObject.Find("ScoreManager(Clone)") == null)
         {
-            Debug.Log(GameObject.Find("ScoreManager"));
             Instantiate(scoreManagerPrefab);
+        }
+
+        //if there is no audio manager in the scene create one
+        if (GameObject.Find("AudioManager") == null && GameObject.Find("AudioManager(Clone)") == null)
+        {
+            Instantiate(audioManagerPrefab);
         }
 
         //setup the occupied positions dictionary
@@ -142,6 +149,17 @@ public class GameController : MonoBehaviour
             {
                 GameObject.Find("ScoreManager(Clone)").GetComponent<ScoreManagement>().EndLevel();
             }
+        }
+
+        try
+        {
+            GameObject.Find("AudioManager").GetComponent<AudioManager>().PlayButtonClick();
+            GameObject.Find("AudioManager").GetComponent<AudioManager>().PlayDemonLaugh();
+        }
+        catch (Exception e)
+        {
+            GameObject.Find("AudioManager(Clone)").GetComponent<AudioManager>().PlayButtonClick();
+            GameObject.Find("AudioManager(Clone)").GetComponent<AudioManager>().PlayDemonLaugh();
         }
 
         //load the next scene in the build order

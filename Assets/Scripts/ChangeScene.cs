@@ -19,7 +19,7 @@ public class ChangeScene : MonoBehaviour
     {
         //if we're changing to main menu from one of other levels
         //reset the total score
-        if (name == "MainMenu")
+        if (name == "MainMenu" && SceneManager.GetActiveScene().name != "HowToPlay" && SceneManager.GetActiveScene().name != "LevelSelect")
         {
             try
             {
@@ -29,6 +29,15 @@ public class ChangeScene : MonoBehaviour
             {
                 GameObject.Find("ScoreManager(Clone)").GetComponent<ScoreManagement>().TotalScore = 0;
             }
+        }
+
+        try
+        {
+            GameObject.Find("AudioManager").GetComponent<AudioManager>().PlayButtonClick(); 
+        }
+        catch (Exception e)
+        {
+            GameObject.Find("AudioManager(Clone)").GetComponent<AudioManager>().PlayButtonClick();
         }
 
         //load the passed-in scene

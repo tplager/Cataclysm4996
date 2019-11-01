@@ -250,7 +250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 9498145}
-  scoreManager: {fileID: 0}
+  moveCounter: {fileID: 0}
+  moves: {fileID: 0}
 --- !u!114 &9498145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,6 +366,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 2135964357}
+    - target: {fileID: 944222727632379394, guid: 548567f9a13db0041b4026a061f9bffd,
+        type: 3}
+      propertyPath: position
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 84621392058158806, guid: 548567f9a13db0041b4026a061f9bffd,
         type: 3}
       propertyPath: m_TagString
@@ -836,6 +842,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 2135964357}
+    - target: {fileID: 5826233865458451707, guid: f6550cd1ff3366c488a9e63c6995d841,
+        type: 3}
+      propertyPath: position
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6550cd1ff3366c488a9e63c6995d841, type: 3}
 --- !u!1 &298462786
@@ -1401,6 +1412,8 @@ MonoBehaviour:
   exitPiece: {fileID: 513270932}
   scoreManagerPrefab: {fileID: 2444271071280721970, guid: 0d6266657e1c689409132fd7cbcd8594,
     type: 3}
+  audioManagerPrefab: {fileID: 8646049715343272447, guid: 007991dc3a57fb04db449fa0205b1631,
+    type: 3}
 --- !u!81 &721455126
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1871,6 +1884,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 2135964357}
+    - target: {fileID: 453337300826214988, guid: 0360b946ad584994e85436922fec2556,
+        type: 3}
+      propertyPath: position
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5576045059764073486, guid: 0360b946ad584994e85436922fec2556,
         type: 3}
       propertyPath: m_TagString
@@ -2216,6 +2234,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 2135964357}
+    - target: {fileID: 295588178516916533, guid: 7114b668fb1e03540b7e949b8ca7ec87,
+        type: 3}
+      propertyPath: position
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7114b668fb1e03540b7e949b8ca7ec87, type: 3}
 --- !u!1001 &1194111541
@@ -3205,6 +3228,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 2135964357}
+    - target: {fileID: 5826233865458451707, guid: f6550cd1ff3366c488a9e63c6995d841,
+        type: 3}
+      propertyPath: position
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6550cd1ff3366c488a9e63c6995d841, type: 3}
 --- !u!1 &1598390176
@@ -3393,6 +3421,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 2135964357}
+    - target: {fileID: 2360066122913926518, guid: e2e7c0e01e8ce8a43b36684c79afa46c,
+        type: 3}
+      propertyPath: position
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7559126713377079370, guid: e2e7c0e01e8ce8a43b36684c79afa46c,
         type: 3}
       propertyPath: m_TagString
@@ -3813,6 +3846,11 @@ PrefabInstance:
       propertyPath: movesObject
       value: 
       objectReference: {fileID: 2135964357}
+    - target: {fileID: 4219942068855570076, guid: 858f78c44f539164e80ea88e0d33a320,
+        type: 3}
+      propertyPath: position
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6867005287870508976, guid: 858f78c44f539164e80ea88e0d33a320,
         type: 3}
       propertyPath: m_TagString
