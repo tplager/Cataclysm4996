@@ -204,7 +204,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1613848988}
-        m_MethodName: changeTo
+        m_MethodName: ChangeTo
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -788,7 +788,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1613848988}
-        m_MethodName: changeTo
+        m_MethodName: ChangeTo
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
